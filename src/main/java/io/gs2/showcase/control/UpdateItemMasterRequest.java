@@ -50,6 +50,12 @@ public class UpdateItemMasterRequest extends Gs2BasicRequest<UpdateItemMasterReq
 	/** GS2-Gold 通貨名 */
 	private String currencyGoldName;
 
+	/** GS2-ConsumableItem アイテムプール名 */
+	private String currencyConsumableItemItemPoolName;
+
+	/** GS2-ConsumableItem アイテム名 */
+	private String currencyConsumableItemItemName;
+
 	/** 対価消費処理にまつわるオプション値 */
 	private String currencyOption;
 
@@ -73,6 +79,12 @@ public class UpdateItemMasterRequest extends Gs2BasicRequest<UpdateItemMasterReq
 
 	/** GS2-ConsumableItem アイテム名 */
 	private String itemConsumableItemItemName;
+
+	/** GS2-Gacha ガチャプール名 */
+	private String itemGachaGachaPoolName;
+
+	/** GS2-Gacha ガチャ名 */
+	private String itemGachaGachaName;
 
 	/** 入手数量 */
 	private Integer itemAmount;
@@ -261,6 +273,64 @@ public class UpdateItemMasterRequest extends Gs2BasicRequest<UpdateItemMasterReq
 	 */
 	public UpdateItemMasterRequest withCurrencyGoldName(String currencyGoldName) {
 		setCurrencyGoldName(currencyGoldName);
+		return this;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテムプール名を取得
+	 *
+	 * @return GS2-ConsumableItem アイテムプール名
+	 */
+	public String getCurrencyConsumableItemItemPoolName() {
+		return currencyConsumableItemItemPoolName;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテムプール名を設定
+	 *
+	 * @param currencyConsumableItemItemPoolName GS2-ConsumableItem アイテムプール名
+	 */
+	public void setCurrencyConsumableItemItemPoolName(String currencyConsumableItemItemPoolName) {
+		this.currencyConsumableItemItemPoolName = currencyConsumableItemItemPoolName;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテムプール名を設定
+	 *
+	 * @param currencyConsumableItemItemPoolName GS2-ConsumableItem アイテムプール名
+	 * @return this
+	 */
+	public UpdateItemMasterRequest withCurrencyConsumableItemItemPoolName(String currencyConsumableItemItemPoolName) {
+		setCurrencyConsumableItemItemPoolName(currencyConsumableItemItemPoolName);
+		return this;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテム名を取得
+	 *
+	 * @return GS2-ConsumableItem アイテム名
+	 */
+	public String getCurrencyConsumableItemItemName() {
+		return currencyConsumableItemItemName;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテム名を設定
+	 *
+	 * @param currencyConsumableItemItemName GS2-ConsumableItem アイテム名
+	 */
+	public void setCurrencyConsumableItemItemName(String currencyConsumableItemItemName) {
+		this.currencyConsumableItemItemName = currencyConsumableItemItemName;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテム名を設定
+	 *
+	 * @param currencyConsumableItemItemName GS2-ConsumableItem アイテム名
+	 * @return this
+	 */
+	public UpdateItemMasterRequest withCurrencyConsumableItemItemName(String currencyConsumableItemItemName) {
+		setCurrencyConsumableItemItemName(currencyConsumableItemItemName);
 		return this;
 	}
 
@@ -493,6 +563,64 @@ public class UpdateItemMasterRequest extends Gs2BasicRequest<UpdateItemMasterReq
 	 */
 	public UpdateItemMasterRequest withItemConsumableItemItemName(String itemConsumableItemItemName) {
 		setItemConsumableItemItemName(itemConsumableItemItemName);
+		return this;
+	}
+
+	/**
+	 * GS2-Gacha ガチャプール名を取得
+	 *
+	 * @return GS2-Gacha ガチャプール名
+	 */
+	public String getItemGachaGachaPoolName() {
+		return itemGachaGachaPoolName;
+	}
+
+	/**
+	 * GS2-Gacha ガチャプール名を設定
+	 *
+	 * @param itemGachaGachaPoolName GS2-Gacha ガチャプール名
+	 */
+	public void setItemGachaGachaPoolName(String itemGachaGachaPoolName) {
+		this.itemGachaGachaPoolName = itemGachaGachaPoolName;
+	}
+
+	/**
+	 * GS2-Gacha ガチャプール名を設定
+	 *
+	 * @param itemGachaGachaPoolName GS2-Gacha ガチャプール名
+	 * @return this
+	 */
+	public UpdateItemMasterRequest withItemGachaGachaPoolName(String itemGachaGachaPoolName) {
+		setItemGachaGachaPoolName(itemGachaGachaPoolName);
+		return this;
+	}
+
+	/**
+	 * GS2-Gacha ガチャ名を取得
+	 *
+	 * @return GS2-Gacha ガチャ名
+	 */
+	public String getItemGachaGachaName() {
+		return itemGachaGachaName;
+	}
+
+	/**
+	 * GS2-Gacha ガチャ名を設定
+	 *
+	 * @param itemGachaGachaName GS2-Gacha ガチャ名
+	 */
+	public void setItemGachaGachaName(String itemGachaGachaName) {
+		this.itemGachaGachaName = itemGachaGachaName;
+	}
+
+	/**
+	 * GS2-Gacha ガチャ名を設定
+	 *
+	 * @param itemGachaGachaName GS2-Gacha ガチャ名
+	 * @return this
+	 */
+	public UpdateItemMasterRequest withItemGachaGachaName(String itemGachaGachaName) {
+		setItemGachaGachaName(itemGachaGachaName);
 		return this;
 	}
 

@@ -52,6 +52,12 @@ public class Item implements Serializable {
 	/** GS2-Gold 通貨名 */
 	private String currencyGoldName;
 
+	/** GS2-ConsumableItem アイテムプール名 */
+	private String currencyConsumableItemItemPoolName;
+
+	/** GS2-ConsumableItem アイテム名 */
+	private String currencyConsumableItemName;
+
 	/** 対価消費処理にまつわるオプション値 */
 	private String currencyOption;
 
@@ -257,6 +263,64 @@ public class Item implements Serializable {
 	 */
 	public Item withCurrencyGoldName(String currencyGoldName) {
 		this.currencyGoldName = currencyGoldName;
+		return this;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテムプール名を取得
+	 *
+	 * @return GS2-ConsumableItem アイテムプール名
+	 */
+	public String getCurrencyConsumableItemItemPoolName() {
+		return currencyConsumableItemItemPoolName;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテムプール名を設定
+	 *
+	 * @param currencyConsumableItemItemPoolName GS2-ConsumableItem アイテムプール名
+	 */
+	public void setCurrencyConsumableItemItemPoolName(String currencyConsumableItemItemPoolName) {
+		this.currencyConsumableItemItemPoolName = currencyConsumableItemItemPoolName;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテムプール名を設定
+	 *
+	 * @param currencyConsumableItemItemPoolName GS2-ConsumableItem アイテムプール名
+	 * @return this
+	 */
+	public Item withCurrencyConsumableItemItemPoolName(String currencyConsumableItemItemPoolName) {
+		this.currencyConsumableItemItemPoolName = currencyConsumableItemItemPoolName;
+		return this;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテム名を取得
+	 *
+	 * @return GS2-ConsumableItem アイテム名
+	 */
+	public String getCurrencyConsumableItemName() {
+		return currencyConsumableItemName;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテム名を設定
+	 *
+	 * @param currencyConsumableItemName GS2-ConsumableItem アイテム名
+	 */
+	public void setCurrencyConsumableItemName(String currencyConsumableItemName) {
+		this.currencyConsumableItemName = currencyConsumableItemName;
+	}
+
+	/**
+	 * GS2-ConsumableItem アイテム名を設定
+	 *
+	 * @param currencyConsumableItemName GS2-ConsumableItem アイテム名
+	 * @return this
+	 */
+	public Item withCurrencyConsumableItemName(String currencyConsumableItemName) {
+		this.currencyConsumableItemName = currencyConsumableItemName;
 		return this;
 	}
 
@@ -590,6 +654,8 @@ public class Item implements Serializable {
             .put("currencyType", this.getCurrencyType())
             .put("currencyMoneyName", this.getCurrencyMoneyName())
             .put("currencyGoldName", this.getCurrencyGoldName())
+            .put("currencyConsumableItemItemPoolName", this.getCurrencyConsumableItemItemPoolName())
+            .put("currencyConsumableItemName", this.getCurrencyConsumableItemName())
             .put("currencyOption", this.getCurrencyOption())
             .put("price", this.getPrice())
             .put("itemType", this.getItemType())
