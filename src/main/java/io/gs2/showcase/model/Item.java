@@ -82,6 +82,12 @@ public class Item implements Serializable {
 	/** GS2-ConsumableItem アイテム名 */
 	private String itemConsumableItemItemName;
 
+	/** GS2-Gacha ガチャプール名 */
+	private String itemGachaGachaPoolName;
+
+	/** GS2-Gacha ガチャ名 */
+	private String itemGachaGachaName;
+
 	/** 入手数量 */
 	private Integer itemAmount;
 
@@ -557,6 +563,64 @@ public class Item implements Serializable {
 	}
 
 	/**
+	 * GS2-Gacha ガチャプール名を取得
+	 *
+	 * @return GS2-Gacha ガチャプール名
+	 */
+	public String getItemGachaGachaPoolName() {
+		return itemGachaGachaPoolName;
+	}
+
+	/**
+	 * GS2-Gacha ガチャプール名を設定
+	 *
+	 * @param itemGachaGachaPoolName GS2-Gacha ガチャプール名
+	 */
+	public void setItemGachaGachaPoolName(String itemGachaGachaPoolName) {
+		this.itemGachaGachaPoolName = itemGachaGachaPoolName;
+	}
+
+	/**
+	 * GS2-Gacha ガチャプール名を設定
+	 *
+	 * @param itemGachaGachaPoolName GS2-Gacha ガチャプール名
+	 * @return this
+	 */
+	public Item withItemGachaGachaPoolName(String itemGachaGachaPoolName) {
+		this.itemGachaGachaPoolName = itemGachaGachaPoolName;
+		return this;
+	}
+
+	/**
+	 * GS2-Gacha ガチャ名を取得
+	 *
+	 * @return GS2-Gacha ガチャ名
+	 */
+	public String getItemGachaGachaName() {
+		return itemGachaGachaName;
+	}
+
+	/**
+	 * GS2-Gacha ガチャ名を設定
+	 *
+	 * @param itemGachaGachaName GS2-Gacha ガチャ名
+	 */
+	public void setItemGachaGachaName(String itemGachaGachaName) {
+		this.itemGachaGachaName = itemGachaGachaName;
+	}
+
+	/**
+	 * GS2-Gacha ガチャ名を設定
+	 *
+	 * @param itemGachaGachaName GS2-Gacha ガチャ名
+	 * @return this
+	 */
+	public Item withItemGachaGachaName(String itemGachaGachaName) {
+		this.itemGachaGachaName = itemGachaGachaName;
+		return this;
+	}
+
+	/**
 	 * 入手数量を取得
 	 *
 	 * @return 入手数量
@@ -664,6 +728,8 @@ public class Item implements Serializable {
             .put("itemStaminaStaminaPoolName", this.getItemStaminaStaminaPoolName())
             .put("itemConsumableItemItemPoolName", this.getItemConsumableItemItemPoolName())
             .put("itemConsumableItemItemName", this.getItemConsumableItemItemName())
+            .put("itemGachaGachaPoolName", this.getItemGachaGachaPoolName())
+            .put("itemGachaGachaName", this.getItemGachaGachaName())
             .put("itemAmount", this.getItemAmount())
             .put("itemOption", this.getItemOption())
             .put("canBuy", this.getCanBuy());
