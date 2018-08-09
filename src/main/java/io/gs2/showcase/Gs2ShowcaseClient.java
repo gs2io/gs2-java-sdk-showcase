@@ -335,21 +335,23 @@ public class Gs2ShowcaseClient extends AbstractGs2Client<Gs2ShowcaseClient> {
 				.put("name", request.getName())
 				.put("currencyType", request.getCurrencyType())
 				.put("price", request.getPrice())
-				.put("itemType", request.getItemType())
-				.put("itemAmount", request.getItemAmount());
+				.put("itemType", request.getItemType());
         if(request.getMeta() != null) body.put("meta", request.getMeta());
         if(request.getCurrencyMoneyName() != null) body.put("currencyMoneyName", request.getCurrencyMoneyName());
         if(request.getCurrencyGoldName() != null) body.put("currencyGoldName", request.getCurrencyGoldName());
+        if(request.getCurrencyGoldPoolName() != null) body.put("currencyGoldPoolName", request.getCurrencyGoldPoolName());
         if(request.getCurrencyConsumableItemItemPoolName() != null) body.put("currencyConsumableItemItemPoolName", request.getCurrencyConsumableItemItemPoolName());
         if(request.getCurrencyConsumableItemItemName() != null) body.put("currencyConsumableItemItemName", request.getCurrencyConsumableItemItemName());
         if(request.getCurrencyOption() != null) body.put("currencyOption", request.getCurrencyOption());
         if(request.getItemMoneyName() != null) body.put("itemMoneyName", request.getItemMoneyName());
+        if(request.getItemGoldPoolName() != null) body.put("itemGoldPoolName", request.getItemGoldPoolName());
         if(request.getItemGoldName() != null) body.put("itemGoldName", request.getItemGoldName());
         if(request.getItemStaminaStaminaPoolName() != null) body.put("itemStaminaStaminaPoolName", request.getItemStaminaStaminaPoolName());
         if(request.getItemConsumableItemItemPoolName() != null) body.put("itemConsumableItemItemPoolName", request.getItemConsumableItemItemPoolName());
         if(request.getItemConsumableItemItemName() != null) body.put("itemConsumableItemItemName", request.getItemConsumableItemItemName());
         if(request.getItemGachaGachaPoolName() != null) body.put("itemGachaGachaPoolName", request.getItemGachaGachaPoolName());
         if(request.getItemGachaGachaName() != null) body.put("itemGachaGachaName", request.getItemGachaGachaName());
+        if(request.getItemAmount() != null) body.put("itemAmount", request.getItemAmount());
         if(request.getItemOption() != null) body.put("itemOption", request.getItemOption());
         if(request.getOpenConditionType() != null) body.put("openConditionType", request.getOpenConditionType());
         if(request.getOpenConditionLimitName() != null) body.put("openConditionLimitName", request.getOpenConditionLimitName());
@@ -487,21 +489,23 @@ public class Gs2ShowcaseClient extends AbstractGs2Client<Gs2ShowcaseClient> {
 		ObjectNode body = JsonNodeFactory.instance.objectNode()
 				.put("currencyType", request.getCurrencyType())
 				.put("price", request.getPrice())
-				.put("itemType", request.getItemType())
-				.put("itemAmount", request.getItemAmount());
+				.put("itemType", request.getItemType());
         if(request.getMeta() != null) body.put("meta", request.getMeta());
         if(request.getCurrencyMoneyName() != null) body.put("currencyMoneyName", request.getCurrencyMoneyName());
         if(request.getCurrencyGoldName() != null) body.put("currencyGoldName", request.getCurrencyGoldName());
+        if(request.getCurrencyGoldPoolName() != null) body.put("currencyGoldPoolName", request.getCurrencyGoldPoolName());
         if(request.getCurrencyConsumableItemItemPoolName() != null) body.put("currencyConsumableItemItemPoolName", request.getCurrencyConsumableItemItemPoolName());
         if(request.getCurrencyConsumableItemItemName() != null) body.put("currencyConsumableItemItemName", request.getCurrencyConsumableItemItemName());
         if(request.getCurrencyOption() != null) body.put("currencyOption", request.getCurrencyOption());
         if(request.getItemMoneyName() != null) body.put("itemMoneyName", request.getItemMoneyName());
+        if(request.getItemGoldPoolName() != null) body.put("itemGoldPoolName", request.getItemGoldPoolName());
         if(request.getItemGoldName() != null) body.put("itemGoldName", request.getItemGoldName());
         if(request.getItemStaminaStaminaPoolName() != null) body.put("itemStaminaStaminaPoolName", request.getItemStaminaStaminaPoolName());
         if(request.getItemConsumableItemItemPoolName() != null) body.put("itemConsumableItemItemPoolName", request.getItemConsumableItemItemPoolName());
         if(request.getItemConsumableItemItemName() != null) body.put("itemConsumableItemItemName", request.getItemConsumableItemItemName());
         if(request.getItemGachaGachaPoolName() != null) body.put("itemGachaGachaPoolName", request.getItemGachaGachaPoolName());
         if(request.getItemGachaGachaName() != null) body.put("itemGachaGachaName", request.getItemGachaGachaName());
+        if(request.getItemAmount() != null) body.put("itemAmount", request.getItemAmount());
         if(request.getItemOption() != null) body.put("itemOption", request.getItemOption());
         if(request.getOpenConditionType() != null) body.put("openConditionType", request.getOpenConditionType());
         if(request.getOpenConditionLimitName() != null) body.put("openConditionLimitName", request.getOpenConditionLimitName());

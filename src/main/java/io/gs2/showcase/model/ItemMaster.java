@@ -49,6 +49,9 @@ public class ItemMaster implements Serializable {
 	/** GS2-Money 課金通貨名 */
 	private String currencyMoneyName;
 
+	/** GS2-Gold 通貨プール名 */
+	private String currencyGoldPoolName;
+
 	/** GS2-Gold 通貨名 */
 	private String currencyGoldName;
 
@@ -69,6 +72,9 @@ public class ItemMaster implements Serializable {
 
 	/** GS2-Money 課金通貨名 */
 	private String itemMoneyName;
+
+	/** GS2-Gold 通貨プール名 */
+	private String itemGoldPoolName;
 
 	/** GS2-Gold 通貨名 */
 	private String itemGoldName;
@@ -252,6 +258,35 @@ public class ItemMaster implements Serializable {
 	 */
 	public ItemMaster withCurrencyMoneyName(String currencyMoneyName) {
 		this.currencyMoneyName = currencyMoneyName;
+		return this;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を取得
+	 *
+	 * @return GS2-Gold 通貨プール名
+	 */
+	public String getCurrencyGoldPoolName() {
+		return currencyGoldPoolName;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を設定
+	 *
+	 * @param currencyGoldPoolName GS2-Gold 通貨プール名
+	 */
+	public void setCurrencyGoldPoolName(String currencyGoldPoolName) {
+		this.currencyGoldPoolName = currencyGoldPoolName;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を設定
+	 *
+	 * @param currencyGoldPoolName GS2-Gold 通貨プール名
+	 * @return this
+	 */
+	public ItemMaster withCurrencyGoldPoolName(String currencyGoldPoolName) {
+		this.currencyGoldPoolName = currencyGoldPoolName;
 		return this;
 	}
 
@@ -455,6 +490,35 @@ public class ItemMaster implements Serializable {
 	 */
 	public ItemMaster withItemMoneyName(String itemMoneyName) {
 		this.itemMoneyName = itemMoneyName;
+		return this;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を取得
+	 *
+	 * @return GS2-Gold 通貨プール名
+	 */
+	public String getItemGoldPoolName() {
+		return itemGoldPoolName;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を設定
+	 *
+	 * @param itemGoldPoolName GS2-Gold 通貨プール名
+	 */
+	public void setItemGoldPoolName(String itemGoldPoolName) {
+		this.itemGoldPoolName = itemGoldPoolName;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を設定
+	 *
+	 * @param itemGoldPoolName GS2-Gold 通貨プール名
+	 * @return this
+	 */
+	public ItemMaster withItemGoldPoolName(String itemGoldPoolName) {
+		this.itemGoldPoolName = itemGoldPoolName;
 		return this;
 	}
 
@@ -845,6 +909,7 @@ public class ItemMaster implements Serializable {
             .put("meta", this.getMeta())
             .put("currencyType", this.getCurrencyType())
             .put("currencyMoneyName", this.getCurrencyMoneyName())
+            .put("currencyGoldPoolName", this.getCurrencyGoldPoolName())
             .put("currencyGoldName", this.getCurrencyGoldName())
             .put("currencyConsumableItemItemPoolName", this.getCurrencyConsumableItemItemPoolName())
             .put("currencyConsumableItemItemName", this.getCurrencyConsumableItemItemName())
@@ -852,6 +917,7 @@ public class ItemMaster implements Serializable {
             .put("price", this.getPrice())
             .put("itemType", this.getItemType())
             .put("itemMoneyName", this.getItemMoneyName())
+            .put("itemGoldPoolName", this.getItemGoldPoolName())
             .put("itemGoldName", this.getItemGoldName())
             .put("itemStaminaStaminaPoolName", this.getItemStaminaStaminaPoolName())
             .put("itemConsumableItemItemPoolName", this.getItemConsumableItemItemPoolName())

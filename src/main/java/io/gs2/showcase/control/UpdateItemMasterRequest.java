@@ -50,6 +50,9 @@ public class UpdateItemMasterRequest extends Gs2BasicRequest<UpdateItemMasterReq
 	/** GS2-Gold 通貨名 */
 	private String currencyGoldName;
 
+	/** GS2-Gold 通貨プール名 */
+	private String currencyGoldPoolName;
+
 	/** GS2-ConsumableItem アイテムプール名 */
 	private String currencyConsumableItemItemPoolName;
 
@@ -67,6 +70,9 @@ public class UpdateItemMasterRequest extends Gs2BasicRequest<UpdateItemMasterReq
 
 	/** GS2-Money 課金通貨名 */
 	private String itemMoneyName;
+
+	/** GS2-Gold 通貨プール名 */
+	private String itemGoldPoolName;
 
 	/** GS2-Gold 通貨名 */
 	private String itemGoldName;
@@ -277,6 +283,35 @@ public class UpdateItemMasterRequest extends Gs2BasicRequest<UpdateItemMasterReq
 	}
 
 	/**
+	 * GS2-Gold 通貨プール名を取得
+	 *
+	 * @return GS2-Gold 通貨プール名
+	 */
+	public String getCurrencyGoldPoolName() {
+		return currencyGoldPoolName;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を設定
+	 *
+	 * @param currencyGoldPoolName GS2-Gold 通貨プール名
+	 */
+	public void setCurrencyGoldPoolName(String currencyGoldPoolName) {
+		this.currencyGoldPoolName = currencyGoldPoolName;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を設定
+	 *
+	 * @param currencyGoldPoolName GS2-Gold 通貨プール名
+	 * @return this
+	 */
+	public UpdateItemMasterRequest withCurrencyGoldPoolName(String currencyGoldPoolName) {
+		setCurrencyGoldPoolName(currencyGoldPoolName);
+		return this;
+	}
+
+	/**
 	 * GS2-ConsumableItem アイテムプール名を取得
 	 *
 	 * @return GS2-ConsumableItem アイテムプール名
@@ -447,6 +482,35 @@ public class UpdateItemMasterRequest extends Gs2BasicRequest<UpdateItemMasterReq
 	 */
 	public UpdateItemMasterRequest withItemMoneyName(String itemMoneyName) {
 		setItemMoneyName(itemMoneyName);
+		return this;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を取得
+	 *
+	 * @return GS2-Gold 通貨プール名
+	 */
+	public String getItemGoldPoolName() {
+		return itemGoldPoolName;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を設定
+	 *
+	 * @param itemGoldPoolName GS2-Gold 通貨プール名
+	 */
+	public void setItemGoldPoolName(String itemGoldPoolName) {
+		this.itemGoldPoolName = itemGoldPoolName;
+	}
+
+	/**
+	 * GS2-Gold 通貨プール名を設定
+	 *
+	 * @param itemGoldPoolName GS2-Gold 通貨プール名
+	 * @return this
+	 */
+	public UpdateItemMasterRequest withItemGoldPoolName(String itemGoldPoolName) {
+		setItemGoldPoolName(itemGoldPoolName);
 		return this;
 	}
 
